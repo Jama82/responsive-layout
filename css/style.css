@@ -39,12 +39,12 @@ container {
 .header-img {
 	width: 100%;
 }
-.navigation {
+.header-navigation {
 	min-height: 100px;
 	margin-top: -720px;
 	display: flex;
 }
-.nav-logo img {
+.header-nav-logo img {
 	width: 172px;
 	height: 29px;
 	margin-left: 165px;
@@ -59,18 +59,18 @@ container {
 	margin-right: 113px;
 	margin-top: 15px;
 }
-.nav-menu li {
+.header-nav-menu li {
 	list-style: none;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
 }
-.lang {
+.header-lang {
 	width: 96px;
 	height: 32px;
 	margin-right: 20px;
 }
-.nav-btn {
+.header-nav-btn {
 	width: 100px;
 	height: 40px;
 	text-transform: uppercase;
@@ -164,17 +164,17 @@ container {
 	max-width: 350px;
 	min-height: 250px;
 }
-.money-card,
-.manage-card,
-.budjet-card {
+.features-money-card,
+.features-manage-card,
+.features-budjet-card {
 	position: relative;
 	max-width: 350px;
 	min-height: 250px;
 }
 
-.money-text,
-.manage-text,
-.budjet-text {
+.features-money-text,
+.features-manage-text,
+.features-budjet-text {
 	width: 293px;
 	height: 198px;
 	border: 1px solid white;
@@ -184,17 +184,17 @@ container {
 	top: 160px;
 	background-color: #fff;
 	box-shadow: 5px 5px 5px grey;
-	padding: 20px;
+	/* padding: 20px; */
 }
-.money-text {
+.features-money-text {
 	position: absolute;
 	left: 30px;
 }
-.manage-text {
+.features-manage-text {
 	position: absolute;
 	right: 38px;
 }
-.budjet-text {
+.features-budjet-text {
 	position: absolute;
 	left: 36px;
 }
@@ -320,7 +320,7 @@ li {
 .footer-list h6 {
 	margin-bottom: 33px;
 }
-.services h6 {
+.footer-services h6 {
 	margin-bottom: 28px;
 }
 .copyright {
@@ -333,7 +333,7 @@ body {
 }
 
 @media screen and (max-width: 1380px) {
-	.navigation {
+	.header-navigation {
 		padding-top: 80px;
 	}
 	.banner-text {
@@ -341,7 +341,7 @@ body {
 	}
 }
 @media screen and (max-width: 1300px) {
-	.nav-menu {
+	.header-nav-menu {
 		position: absolute;
 		left: -2000px;
 		flex-direction: column;
@@ -362,14 +362,14 @@ body {
 		margin-left: 350px;
 		margin-top: 10px;
 	}
-	.lang,
-	.nav-btn {
+	.header-lang,
+	.header-nav-btn {
 		display: none;
 	}
 }
 
 @media screen and (max-width: 1220px) {
-	.navigation {
+	.header-navigation {
 		padding-top: 150px;
 	}
 	.banner-text h1 {
@@ -385,7 +385,7 @@ body {
 		margin-left: 300px;
 		margin-top: 40px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 50px;
 	}
 	.banner-btn {
@@ -401,9 +401,9 @@ body {
 	.video-txt {
 		margin-top: -200px;
 	}
-	.money-card,
-	.manage-card,
-	.budjet-card {
+	.features-money-card,
+	.features-manage-card,
+	.features-budjet-card {
 		margin: 70px;
 	}
 	.features {
@@ -422,7 +422,7 @@ body {
 		margin-left: 240px;
 		margin-top: 60px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 90px;
 	}
 	.banner-text h1 {
@@ -444,7 +444,7 @@ body {
 		margin-left: 180px;
 		margin-top: 80px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 150px;
 	}
 	.banner-text {
@@ -457,7 +457,7 @@ body {
 		margin-left: 150px;
 		margin-top: 100px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 180px;
 	}
 	.banner-text h1 {
@@ -480,14 +480,14 @@ body {
 		margin-left: 130px;
 		margin-top: 120px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 230px;
 		margin-left: -80px;
 	}
 	.banner-text {
 		margin-top: -120px;
 	}
-	.money {
+	.features-money {
 		margin: 0 auto;
 	}
 	.save-text {
@@ -499,10 +499,10 @@ body {
 	.footer {
 		margin: 20px 0 0 0;
 	}
-	.address,
-	.get,
-	.support,
-	.services {
+	.footer-address,
+	.footer-get,
+	.footer-support,
+	.footer-services {
 		margin: 0px 20px;
 	}
 }
@@ -520,7 +520,7 @@ body {
 		width: 20px;
 		height: 20px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 280px;
 		margin-left: -100px;
 	}
@@ -574,17 +574,17 @@ body {
 	.video-section {
 		margin-top: -250px;
 	}
-	.money,
-	.manage,
-	.budjet {
+	.features-money,
+	.features-manage,
+	.features-budjet {
 		width: 100%;
 		max-width: 250px;
 		min-height: 150px;
 	}
-	.address,
-	.get,
-	.support,
-	.services {
+	.footer-address,
+	.footer-get,
+	.footer-support,
+	.footer-services {
 		margin: 0px 30px 0 0;
 	}
 }
@@ -594,7 +594,7 @@ body {
 		margin-left: 80px;
 		margin-top: 160px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 300px;
 		margin-left: -130px;
 	}
@@ -613,7 +613,7 @@ body {
 		margin-left: 60px;
 		margin-top: 180px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 350px;
 		margin-left: -110px;
 	}
@@ -630,9 +630,9 @@ body {
 		margin-top: -450px;
 	}
 
-	.money-text,
-	.manage-text,
-	.budjet-text {
+	.features-money-text,
+	.features-manage-text,
+	.features-budjet-text {
 		width: 223px;
 		height: 168px;
 		padding: 2px;
@@ -640,16 +640,16 @@ body {
 		left: 5px;
 	}
 
-	.money-text h5,
-	.manage-text h5,
-	.budjet-text h5 {
+	.features-money-text h5,
+	.features-manage-text h5,
+	.features-budjet-text h5 {
 		font-size: 14px;
 	}
-	.money-text h6,
+	.features-money-text h6,
 	p,
-	.manage-text h6,
+	.features-manage-text h6,
 	p,
-	.budjet-text h6,
+	.features-budjet-text h6,
 	p {
 		font-size: 8px;
 	}
@@ -660,7 +660,7 @@ body {
 		margin-left: 40px;
 		margin-top: 200px;
 	}
-	.nav-logo {
+	.header-nav-logo {
 		margin-top: 390px;
 		margin-left: -130px;
 	}
